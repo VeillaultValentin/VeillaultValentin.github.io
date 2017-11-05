@@ -1,0 +1,60 @@
+body {
+	background-color: #f2d43f;
+	color: black;
+}
+h1 {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+a {
+	color: #c0392b;
+}
+a:hover {
+	color: #e74c3c;
+}
+#page0 {
+	background-color: #f1c40f;
+}
+#page1 {
+	background-color: #f39c12;
+}
+#page2 {
+	background-color: #e67e22;
+}
+#page3 {
+	background-color: #d35400;
+}
+.fixed {
+	top: 35vh;
+	position: fixed;
+	z-index: 1000;
+}
+#page0 p {
+	text-align: justify;
+	text-indent: 2em;
+}
+#page1 h1 {
+	padding-top: 2em;
+}
+.carousel-indicators {
+	top: 80%;
+}
+/* vh = viewport height */
+.section {
+	height: 100vh;
+}
+.arrow {
+	margin-left: 45%;
+}
+#page2, #page3 {
+	text-align: center;
+}
+#page2 h1, #page3 h1 {
+	padding-top: 40vh;
+}
+.carousel-inner {
+	height: 90vh;
+}
+#nompnom {
+	font-size: 1.5em;
+}
