@@ -34,7 +34,11 @@ a:hover {
 	text-indent: 2em;
 }
 #page1 h1 {
-	padding-top: 2em;
+	padding-top: 0.2em;
+	margin-bottom: -0.4em;
+}
+#page0 p {
+	font-size: 0.6em;
 }
 /* menu */
 .fixed {
@@ -55,7 +59,7 @@ a:hover {
 		height: 100vh;
 	}
 	#page0 p {
-		font-size: 0.6em;
+		font-size: 1em;
 	}
 }
 .arrow {
