@@ -3,6 +3,9 @@ body {
 	background-color: #f2d43f;
 	color: black;
 }
+hr {
+	margin: 0px;
+}
 h1 {
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
@@ -35,7 +38,7 @@ a:hover {
 }
 /* menu */
 .fixed {
-	top: 35vh;
+	top: 14vh;
 	position: fixed;
 	z-index: 1000;
 }
@@ -45,7 +48,7 @@ a:hover {
 }
 /* vh = viewport height */
 .section {
-	height: 30vh;
+	height: 40vh;
 }
 @media (min-width: 992px) {
 	.section {
@@ -53,6 +56,9 @@ a:hover {
 	}
 	#page0 p {
 		font-size: 0.6em;
+	}
+	.fixed {
+		top: 14vh;
 	}
 }
 .arrow {
