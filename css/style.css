@@ -46,12 +46,12 @@ a:hover {
 /* vh = viewport height */
 @media (min-width: 992px) {
 	.section {
-		height: 100vh;
+		height: 30vh;
 	}
 }
 @media (min-width: 576px) {
 	.section {
-	height: 30vh;
+	height: 100vh;
 	}
 }
 .arrow {
