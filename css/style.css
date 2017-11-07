@@ -38,7 +38,7 @@ a:hover {
 }
 /* menu */
 .fixed {
-	top: 14vh;
+	top: 40vh;
 	position: fixed;
 	z-index: 1000;
 }
@@ -56,9 +56,6 @@ a:hover {
 	}
 	#page0 p {
 		font-size: 0.6em;
-	}
-	.fixed {
-		top: 14vh;
 	}
 }
 .arrow {
