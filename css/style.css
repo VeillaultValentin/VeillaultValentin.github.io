@@ -44,14 +44,14 @@ a:hover {
 	top: 80%;
 }
 /* vh = viewport height */
-@media (min-width: 992px) {
+@media (min-width: 576px) {
 	.section {
 		height: 30vh;
 	}
 }
-@media (min-width: 576px) {
+@media (min-width: 992px) {
 	.section {
-	height: 100vh;
+		height: 100vh;
 	}
 }
 .arrow {
