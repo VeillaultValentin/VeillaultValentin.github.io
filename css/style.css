@@ -44,10 +44,8 @@ a:hover {
 	top: 80%;
 }
 /* vh = viewport height */
-@media (min-width: 576px) {
-	.section {
-		height: 30vh;
-	}
+.section {
+	height: 30vh;
 }
 @media (min-width: 992px) {
 	.section {
