@@ -49,8 +49,10 @@ a:hover {
 		height: 100vh;
 	}
 }
-.section {
+@media (min-width: 576px) {
+	.section {
 	height: 100vh;
+	}
 }
 .arrow {
 	margin-left: 45%;
