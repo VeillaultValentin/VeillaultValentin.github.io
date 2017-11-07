@@ -51,6 +51,9 @@ a:hover {
 	.section {
 		height: 100vh;
 	}
+	#page0 p {
+		font-size: 0.6em;
+	}
 }
 .arrow {
 	margin-left: 45%;
