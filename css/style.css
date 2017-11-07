@@ -1,3 +1,4 @@
+/* general */
 body {
 	background-color: #f2d43f;
 	color: black;
@@ -12,6 +13,7 @@ a {
 a:hover {
 	color: #e74c3c;
 }
+/* pages */
 #page0 {
 	background-color: #f1c40f;
 }
@@ -24,11 +26,6 @@ a:hover {
 #page3 {
 	background-color: #d35400;
 }
-.fixed {
-	top: 35vh;
-	position: fixed;
-	z-index: 1000;
-}
 #page0 p {
 	text-align: justify;
 	text-indent: 2em;
@@ -36,10 +33,22 @@ a:hover {
 #page1 h1 {
 	padding-top: 2em;
 }
+/* menu */
+.fixed {
+	top: 35vh;
+	position: fixed;
+	z-index: 1000;
+}
+/* adjust slider */
 .carousel-indicators {
 	top: 80%;
 }
 /* vh = viewport height */
+@media (min-width: 992px) {
+	.section {
+		height: 100vh;
+	}
+}
 .section {
 	height: 100vh;
 }
