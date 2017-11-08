@@ -1,0 +1,93 @@
+/* general */
+body {
+	background-color: #f2d43f;
+	color: black;
+}
+hr {
+	margin: 0px;
+}
+h1 {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+a {
+	color: #c0392b;
+}
+a:hover {
+	color: #e74c3c;
+}
+/* pages */
+#page0 {
+	background-color: #f1c40f;
+}
+#page1 {
+	background-color: #f39c12;
+}
+#page2 {
+	background-color: #e67e22;
+}
+#page3 {
+	background-color: #d35400;
+}
+#page0 p {
+	text-align: justify;
+	text-indent: 2em;
+}
+#page1 h1 {
+	padding-top: 0.4em;
+	margin-bottom: -0.2em;
+}
+#page0 p {
+	font-size: 0.6em;
+}
+/* menu */
+.fixed {
+	top: 40vh;
+	position: fixed;
+	z-index: 1000;
+}
+/* vh = viewport height */
+.section {
+	height: 50vh;
+}
+#page2 h1, #page3 h1 {
+	padding-top: 15vh;
+}
+@media (min-width: 992px) {
+	.section {
+		height: 100vh;
+	}
+	#page0 p {
+		font-size: 1em;
+	}
+	#page2 h1, #page3 h1 {
+	padding-top: 40vh;
+	}
+}
+.arrow {
+	margin-left: 45%;
+}
+#page2, #page3 {
+	text-align: center;
+}
+#nompnom {
+	font-size: 1.5em;
+}
+/* carousel */
+.owl-carousel {
+	margin: auto;
+	text-align: center;
+}
+.owl-dots {
+	
+}
+.owl-dot {
+	height: 3px;
+	width: 30px;
+	background-color: blue;
+	display: inline-block;
+	margin: 5px;
+}
+.owl-dots .active{
+	background-color: green;
+}
