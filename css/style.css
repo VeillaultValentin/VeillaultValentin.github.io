@@ -7,7 +7,7 @@ hr {
 	margin: 0px;
 }
 h1 {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Nunito', 'Roboto', sans-serif;
 	text-align: center;
 }
 a {
@@ -84,10 +84,10 @@ a:hover {
 .owl-dot {
 	height: 3px;
 	width: 30px;
-	background-color: blue;
+	background-color: #c0392b;
 	display: inline-block;
 	margin: 5px;
 }
 .owl-dots .active{
-	background-color: green;
+	background-color: white;
 }
