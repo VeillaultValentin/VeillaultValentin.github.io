@@ -39,7 +39,7 @@ a:hover {
 	margin-bottom: -0.2em;
 }
 #page0 p {
-	font-size: 0.6em;
+	font-size: 0.8em;
 }
 /* menu */
 .fixed {
@@ -49,12 +49,12 @@ a:hover {
 }
 /* vh = viewport height */
 .section {
-	height: 50vh;
+	height: 65vh;
 }
 #page2 h1, #page3 h1 {
 	padding-top: 15vh;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 	.section {
 		height: 100vh;
 	}
