@@ -16,6 +16,8 @@
 	<!-- owl carrousel -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- fancybox -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<!-- my css -->
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -37,10 +39,11 @@
 			<div class="row">
 				<div class="col-12"><br/><br/></div>
 				<div class="col-4">
-					<img src="" alt="photo" class="img-responsive">
+					<img src="img/photo.jpg" alt="photo-identité" class="img-fluid">
 				</div>
 				<div class="col-8">
-					<p>Cras tristique ante est, at condimentum eros sagittis a. Suspendisse dignissim elit in libero pulvinar ultricies. Fusce posuere, lectus in porta posuere, massa mauris efficitur ex, lacinia porta odio leo vitae ante. Phasellus finibus sapien sed felis auctor, consectetur rutrum risus tristique. Etiam nunc sapien, sodales dapibus congue rhoncus, efficitur eu orci. Etiam a facilisis erat. Integer sit amet ligula faucibus orci malesuada hendrerit. Curabitur elit tortor, dictum sed nunc ac, congue tincidunt neque. Suspendisse tincidunt, risus at consequat commodo, </p>
+					<p>Je suis actuellement étudiant en 2ème année de DUT Métiers du Multimédia et de l'Internet à Vichy. Je suis passionné par le développement, le design et l'ergonomie. Je suis formé à développer sur le web avec divers outils mettant en œuvre mes compétences techniques, ma rigueur, ma  curiosité et ma créativité. J'apprécie également travailler sur le maquettage, l'ergonomie, le design... Tout ceci dans une optique de me former en tant que développeur web et dès que possible explorer le domaine du développement de jeux-vidéos et le game design.</p>
+					<p>En effet, j'ai également découvert en moi au cours de mes études un intérêt grandissant pour le développement mais pas nécessairement sur le web mais aussi de jeux-vidéos car les côtés créatifs et techniques ensembles me tiennent vraiment à cœur pour réaliser des projets toujours plus intéressants et bien pensés. C'est quelque chose que je développe personnellement grâce à la documentation en ligne des moteurs tels qu’Unity3D et Unreal Engine 4.</p>
 				</div>
 				<div class="col-12">
 					<hr/><br/><a href="#page1" class="arrow"><i class="fa fa-arrow-down fa-5x" aria-hidden="true"></i></a>
@@ -50,33 +53,51 @@
 		<div class="container section" id="page1">
 			<h1>Mes réalisations</h1>
 			<br/>
-			<div class="owl-carousel">
-			  <div>
-				<img src="img/test2.svg" alt="bg-img"/>
-				<div class="caption">
-				  <p>Lorem ipsum...</p>
-				</div>
-			  </div>
-			  <div>
-				<img src="img/test2.svg" alt="bg-img"/>
-				<div class="caption">
-				  <p>Lorem ipsum...</p>
-				</div>
-			  </div>
-			  <div>
-				<img src="img/test2.svg" alt="bg-img"/>
-				<div class="caption">
-				  <p>Lorem ipsum...</p>
-				</div>
-			  </div>
-			  <div>
-				<img src="img/test2.svg" alt="bg-img"/>
-				<div class="caption">
-				  <p>Lorem ipsum...</p>
-				</div>
-			  </div>
+			<!-- <div class="owl-carousel"> -->
+			  <!-- <div> -->
+				<!-- <img src="img/test2.svg" alt="bg-img"/> -->
+				<!-- <div class="caption"> -->
+				  <!-- <p>Lorem ipsum...</p> -->
+				<!-- </div> -->
+			  <!-- </div> -->
+			  <!-- <div> -->
+				<!-- <img src="img/test2.svg" alt="bg-img"/> -->
+				<!-- <div class="caption"> -->
+				  <!-- <p>Lorem ipsum...</p> -->
+				<!-- </div> -->
+			  <!-- </div> -->
+			  <!-- <div> -->
+				<!-- <img src="img/test2.svg" alt="bg-img"/> -->
+				<!-- <div class="caption"> -->
+				  <!-- <p>Lorem ipsum...</p> -->
+				<!-- </div> -->
+			  <!-- </div> -->
+			  <!-- <div> -->
+				<!-- <img src="img/test2.svg" alt="bg-img"/> -->
+				<!-- <div class="caption"> -->
+				  <!-- <p>Lorem ipsum...</p> -->
+				<!-- </div> -->
+			  <!-- </div> -->
 			  
+			<!-- </div> -->
+			<div id="galerie" >
+				<div class="embed-responsive embed-responsive-1by1 galerie-item">
+					<a href="img/perroquet.svg" data-fancybox="group" data-caption="Personnage réalisé en 2h pour un pour un travail sur un sérious game fictif">
+						<img src="img/perroquet.svg" alt="perroquet vectoriel" class="embed-responsive-item"/>
+					</a>
+				</div>
+				<div class="embed-responsive embed-responsive-1by1 galerie-item">
+					<a href="img/Personnages.png" data-fancybox="group" data-caption="Personnages réalisés dans le cardre d'une Game Jam pour un jeu de gestion de sous marin et de son équipage">
+						<img src="img/Personnages.png" alt="dessin personnages" class="embed-responsive-item" />
+					</a>
+				</div>
+				<div class="embed-responsive embed-responsive-1by1 galerie-item">
+					<a href="img/espanolisimo.svg" data-fancybox="group" data-caption="A venir en début 2018 suite à la fin du projet">
+						<img src="img/espanolisimo.svg" alt="site web espanolisimo" class="embed-responsive-item" />
+					</a>
+				</div>
 			</div>
+			<p>Contenu à venir...</p>
 		</div>
 		<div class="container section" id="page2">
 			<div class="col-12">
@@ -85,14 +106,14 @@
 				<i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
 				<br/>
 				<br/>
-				<button class="btn btn-warning btn-lg">Veillault_Valentin_CV.pdf</button>
+				<button class="btn btn-warning btn-lg" onclick="location.href='Valentin_Veillault_CV.pdf'" >Veillault_Valentin_CV.pdf</button>
 			</div>
 		</div>
 		<div class="container section" id="page3">
 			<h1>Me contacter</h1>
 			<p>Vous pouvez me contacter en envoyant un email à l'adresse suivante :
 			<br/>
-			valentin.v03@orange.fr
+			<strong>valentin.v03@orange.fr</strong>
 			</p>
 		</div>
 	</div>
@@ -103,6 +124,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<!-- owl carousel -->
 	<script src="js/owl.carousel.min.js"></script>
+	<!-- fancybox -->
+	<script src="js/jquery.fancybox.min.js"></script>
 	<!-- mon script -->
 	<script src="js/script.js"></script>
   </body>
