@@ -164,7 +164,7 @@ var Scene = /** @class */ (function (_super) {
         score.getBalise().style.fontWeight = "bold";
         score.getBalise().style.textAlign = "center";
         score.setDimension(300, 30);
-        score.getBalise().innerText = "Points ast�roids : " + this.score_.toString();
+        score.getBalise().innerText = "Points astéroids : " + this.score_.toString();
         score.setXY(this.getLargeur() / 2 - score.getLargeur() / 2, this.getHauteur() / 2 - score.getHauteur() / 2 + 30);
         this.ajouter(score);
         var score2 = new Sprite(document.createElement("div"));
