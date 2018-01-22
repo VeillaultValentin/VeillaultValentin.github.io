@@ -1,0 +1,23 @@
+* {
+    pointer-events: none;
+}
+body {
+    background-color: #DDDDDD;
+    overflow: hidden;
+    font-family: 'Supermercado One', cursive;
+}
+
+#scene {
+    background-color: #aea6f7;
+    box-shadow: 2px 2px 5px grey;
+    overflow: hidden;
+}
+#barres {
+    z-index: 100000;
+}
+#perso {
+    z-index: 1000;
+}
+#arme {
+    z-index: 1001;
+}
