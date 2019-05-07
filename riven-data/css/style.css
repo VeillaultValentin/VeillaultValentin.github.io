@@ -1,0 +1,221 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #222;
+	color: rgba(255,255,255,0.8);
+}
+h1, h2, h3, li span, form, footer {
+	text-align: center;
+}
+h1 {
+	font-size: 2.5em;
+}
+h2 {
+	font-size: 2em;
+	margin-top: 0;
+}
+header {
+	background-color: #fff;
+}
+#warframe-logo, #riven-logo {
+	display: block;
+	margin: auto;
+}
+#warframe-logo {
+	width: 20%;
+	padding-top: 0.25em;
+}
+#riven-logo {
+	width: 3em;
+	padding: 0.5em;
+}
+#datas {
+	display: flex;
+	width: 100%;
+}
+.half {
+	margin: 1em;
+	flex: 1;
+	height: 100%;
+	border: thin solid black;
+}
+ul {
+	display: flex;
+	flex-direction: column;
+	width: 17em;
+	margin: auto;
+	list-style: circle;
+	font-size: 1.25em;
+	color: #de1d25;
+}
+li {
+	margin: 0.5em;
+}
+li span {
+	color: #ecf0f1;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: auto;
+}
+#reroll {
+	font-style: italic;
+}
+.svg-container {
+	margin: auto !important;
+}
+footer input {
+	margin: 1em;
+	padding: 0.5em;
+}
+table {
+	margin: auto;
+	margin-bottom: 3em;
+}
+thead {
+	padding-right: 1em;
+	background-color: #e74c3c;
+}
+th, td {
+	padding: 0.5em;
+	width: 12em;
+}
+td, thead {
+	border-bottom: thin solid rgba(255,255,255,0.8);
+}
+thead, tbody {
+	display: block;
+}
+tbody {
+	overflow-y: auto;
+	max-height: 30em;
+	background-color: #2c3e50;
+}
+tbody tr:hover {
+	background-color: #34495e;
+}
+tbody tr:active {
+	background-color: #7f8c8d;
+}
+input {
+	background-color: #ecf0f1;
+}
+.half hr {
+	color: black;
+}
+#c-price {
+	width: 4em;
+	text-align: right;
+}
+.percent:after {
+	content: " %";
+}
+.lds-css {
+	position: absolute;
+	z-index: 9999;
+	background-color: #000;
+	opacity: 1;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+}
+.lds-eclipse {
+	top: 30%;
+	margin: auto;
+}
+
+.icon {
+	background-repeat: no-repeat;
+	width: 1em;
+	height: 1em;
+	background-size: 1em 1em;
+	display: inline-block;
+}
+#Archgun {
+	background-image: url('../img/Fluctus.png');
+}
+#Shotgun {
+	background-image: url('../img/Corinth.png');
+}
+#Pistol {
+	background-image: url('../img/Lex.png');
+}
+#Melee {
+	background-image: url('../img/Orthos.png');
+}
+#Rifle {
+	background-image: url('../img/Braton.png');
+}
+#Kitgun {
+	background-image: url('../img/Gaze.png');
+}
+#Zaw {
+	background-image: url('../img/Mewan.png');
+}
+#pl {
+	background-image: url('../img/Platinum.png');
+}
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 1em;
+  background: #d3d3d3;
+  outline: none;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.slider::-webkit-slider-thumb {
+  width: 0.5em;
+  height: 1.25em;
+  background: #8e44ad;
+  cursor: pointer;
+	border-radius: 0;
+}
+.slider::-moz-range-thumb {
+  width: 0.5em;
+  height: 1.25em;
+  background: #8e44ad;
+  cursor: pointer;
+	border-radius: 0;
+	border: 0;
+}
+#update {
+	background-color: #c0392b;
+	padding: 0.5em;
+}
+#update:hover {
+	background-color: #e74c3c;
+}
+.popular > .wp-name:before {
+	content: url('../img/flame.svg');
+	background-repeat: no-repeat;
+	width: 1em;
+	height: 1em;
+	margin-right: 0.25em;
+	background-size: 1em 1em;
+	display: inline-block;
+}
+.expensive > .wp-name:after {
+	content: url('../img/coins.svg');
+	background-repeat: no-repeat;
+	width: 1em;
+	height: 1em;
+	margin-left: 0.25em;
+	background-size: 1em 1em;
+	display: inline-block;
+}
+
+/* svg graph theme */
+.subplot rect, .legend rect {
+	fill: transparent !important;
+}
+svg {
+	background: transparent !important;
+}
+text {
+	fill: rgba(255,255,255,0.8) !important;
+}
+.crisp {
+  stroke: rgba(255,127,80,0.5) !important;
+}
