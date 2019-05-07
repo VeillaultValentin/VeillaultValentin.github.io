@@ -36,7 +36,6 @@ header {
 	margin: 1em;
 	flex: 1;
 	height: 100%;
-	border: thin solid black;
 }
 ul {
 	display: flex;
