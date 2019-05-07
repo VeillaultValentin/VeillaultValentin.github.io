@@ -228,7 +228,7 @@ function expensive(n) {
 window.addEventListener("load", function(data) {
 	window.location.href = "#";
 	loader();	
-	var url = 'http://n9e5v4d8.ssl.hwcdn.net/repos/weeklyRivensPC.json';
+	var url = 'https://n9e5v4d8.ssl.hwcdn.net/repos/weeklyRivensPC.json';
 	var Ajax = {
 		xhr : null,
 		request : function (url, method, data, success, failure){
