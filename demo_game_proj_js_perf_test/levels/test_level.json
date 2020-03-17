@@ -1,0 +1,1361 @@
+{
+  "name": "test_level",
+  "order": 0,
+  "tileset": [
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass_curved_top_left.svg",
+        "overlay": "grass_overlay_curved_top_left.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass_curved_top_left.svg",
+        "overlay": "grass_overlay_curved_top_left.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass_curved_top_right.svg",
+        "overlay": "grass_overlay_curved_top_right.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass_curved_top_right.svg",
+        "overlay": "grass_overlay_curved_top_right.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "vine",
+		"image": "vine_top.svg"
+      },
+      {
+        "type": "vine",
+		"image": "vine.svg"
+      },
+      {
+        "type": "vine",
+		"image": "vine.svg"
+      },
+      {
+        "type": "vine",
+		"image": "vine.svg"
+      },
+      {
+        "type": "vine",
+		"image": "vine.svg"
+      },
+      {
+        "type": "vine",
+		"image": "vine.svg"
+      },
+      {
+        "type": "vine",
+		"image": "vine.svg"
+      },
+      {
+        "type": "vine",
+		"image": "vine.svg"
+      },
+      {
+        "type": "vine",
+		"image": "vine.svg"
+      },
+      {
+        "type": "vine",
+		"image": "vine.svg"
+      },
+      {
+        "type": "vine",
+		"image": "vine.svg"
+      },
+      {
+        "type": "vine",
+		"image": "vine.svg"
+      },
+      {
+        "type": "vine",
+		"image": "vine_bottom.svg"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass_curved_top_left.svg",
+        "overlay": "grass_overlay_curved_top_left.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass_curved_top_left.svg",
+        "overlay": "grass_overlay_curved_top_left.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "air"
+      },
+      {
+        "type": "ground",
+        "image": "grass_curved_top_right.svg",
+        "overlay": "grass_overlay_curved_top_right.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ],
+    [
+      {
+        "type": "roof",
+        "image": "generic_roof.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "wall",
+        "image": "generic_wall.png"
+      },
+      {
+        "type": "ground",
+        "image": "grass.svg",
+        "overlay": "grass_overlay.svg"
+      }
+    ]
+  ]
+}
