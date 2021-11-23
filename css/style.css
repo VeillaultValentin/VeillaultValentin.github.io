@@ -25,13 +25,13 @@ header {
 }
 
 @media screen and (min-width: 480px) {
-    main {
-        width: 80%;
-        margin: auto;
-    }
     header, footer {
         font-size: 2em;
     }
+}
+
+main {
+    margin: auto;
 }
 
 
