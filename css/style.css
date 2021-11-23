@@ -71,3 +71,46 @@ a {
 .button:hover {
     filter: brightness(100%);
 }
+
+.resumes {
+    transform: translateZ(20px);
+    display: flex;
+}
+
+.resumes div {
+    display: flex;
+    flex-direction: column;
+    margin: 0.25em;
+    width: 80%;
+}
+
+.resumes img {
+    height: 2em;
+    border-radius: 5px;
+    margin-bottom: 0.25em;
+}
+
+.resume3D {
+    display: block;
+    transition: height 0.5s ease-in-out, margin 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+    transition-delay: 0.5s;
+    height: 250px;
+    width: 190px;
+    margin-top: 400px;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 -30px 40px -20px rgb(0 0 0 / 75%) inset;
+}
+
+#leftResume {
+    transform: rotateX(-90deg) rotateY(-5deg) translateY(-150px) translateZ(10px) translateX(-105px);
+    background: url('../img/Resume_valentin_veillault.png') no-repeat top left;
+    background-size: cover;
+}
+
+#rightResume {
+    transform: rotateX(-90deg) rotateY(-5deg) translateY(-150px) translateZ(-10px) translateX(100px);
+    background: url('../img/Lebenslauf_valentin_veillault_1.png') no-repeat top left;
+    background-size: cover;
+}
