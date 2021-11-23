@@ -1,0 +1,95 @@
+/* expandable content */
+
+.accordion {
+    transform: translateZ(20px);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+    height: 100%;
+    overflow-y: auto;
+    cursor: default;
+
+    /* Works on Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.75) transparent;
+}
+
+/* Works on Chrome, Edge, and Safari */
+.accordion::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.accordion::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.accordion::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.toggle {
+    display: none;
+}
+
+.option {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.title,
+.content {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: all 0.2s;
+
+    text-align: left;
+}
+
+.title {
+    background: rgba(255, 255, 255, 0.35);
+    padding: 1em;
+    display: block;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.title:after,
+.title:before {
+    content: "";
+    position: absolute;
+    right: 1.25em;
+    top: 1.25em;
+    width: 2px;
+    height: 0.75em;
+    background-color: #000;
+    transition: all 0.2s;
+}
+
+.title:after {
+    transform: rotate(90deg);
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.content p {
+    margin: 0;
+    padding: 0.5em 1em 1em;
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: black;
+
+    text-indent: 2em;
+    text-align: left;
+}
+
+.toggle:checked+.title+.content {
+    max-height: 500px;
+}
+
+.toggle:checked+.title:before {
+    transform: rotate(90deg) !important;
+}

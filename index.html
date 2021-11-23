@@ -1,109 +1,320 @@
-<!doctype html>
-<html lang="fr">
-  <head>
-    <title>Veillault Valentin, portfolio</title>
-	<link rel="icon" type="image/svg" href="img/perroquet.svg" />
-    <meta charset="utf-8">
-	<!-- custom font titles -->
-	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-	<!-- fancybox -->
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-	<!-- my css -->
-    <link rel="stylesheet" href="css/style.css">
-	<!-- JS hexagon managment -->
-	<script src="js/hexFlow.js"></script>
-  </head>
-  <body>
-	<header>
-		<h1>Portfolio de : Valentin Veillault</h1>
-		<nav>
-			<a href="Valentin_Veillault_CV.pdf">CV</a>
-			<a href="mailto:valentin.v03@orange.fr">Contact</a>
-		</nav>
-	</header>
-	<section style="position: absolute;width: 100%;height: 100%;top: 0;left:0;z-index: 100;background-color: #ff0000a6;margin: 0;">
-    		<p style="margin: 2em;font-size: 8em;">Currently being reworked</p>
-	</section>
-	<main>
-		<div class="hexagon"><div class="innerHex"></div></div>
-		<div class="hexagon">
-			<div class="innerHex">
-			<a data-fancybox="" data-src="#text" href="javascript:;">
-				<article id="text-showcase"></article>
-			</a>
-			</div>
-			<article id="text" hidden>
-					<h1>À propos de moi</h1>
-					<p>Je suis actuellement étudiant en Master 1 Informatique à l'ISIMA. Je m'intéresse particulièrement à l'informatique et j’en ai fait le sujet de mes études car je suis passionné par le potentiel créatif que cela apporte avant tout. Pour moi maitriser le développement est une compétence qui me permet d'être capable de créer avec des moyens technologiques avancés. C'est entre autre pour cela que je m'intéresse particulièrement au domaine des jeux-vidéos et vise à entrer dans cette industrie par la suite. Pour moi, concevoir quelque chose et d'une certaine manière lui donner vie, le partager et le rendre utile est vraiment un objectif fondamental.
-					</p>
-			</article>
-		</div>
-		<div class="hexagon"><div class="innerHex"></div></div>
-		<div class="hexagon">
-			<div class="innerHex">
-				<a href="img/perroquet.svg" data-fancybox="group" data-caption="Personnage réalisé pour un pour un travail sur un sérious game fictif.">
-					<img src="img/perroquet.svg" alt="Personnage réalisé pour un pour un travail sur un sérious game fictif." class="embed"/>
-				</a>
-				<article class="caption">
-					<p>Personnage réalisé pour un pour un travail sur un sérious game fictif.</p>
-				</article>
-			</div>
-		</div>
-		<div class="hexagon"><div class="innerHex"></div></div>
-		<div class="hexagon">
-			<div class="innerHex">
-				<a href="img/demo_showcase.png" data-fancybox="group" data-caption="Petit projet de jeu en TypeScript fait pendant mon temps libre.">
-					<img src="img/demo_showcase.png" alt="Petit projet de jeu en TypeScript fait pendant mon temps libre." class="embed"/>
-				</a>
-				<article class="caption">
-					<p>Petit projet de jeu en TypeScript fait pendant mon temps libre.</p>
-					<a href="demo_game_proj_js_perf_test/index.html">Voir la démo</a>
-				</article>
-			</div>
-		</div>
-		<div class="hexagon"><div class="innerHex"></div></div>
-		<div class="hexagon">
-			<div class="innerHex">
-				<a href="img/wiki-peps.png" data-fancybox="group" data-caption="Développement d'un Wiki sur les dispositifs PEPS (Partage d'Expérience et Production de Savoir) suite à une initiatives au seins du département SAD à l'INRA. Le wiki est intitulé : ''Wiki PEPS''. (Récupéré via web.archive.org, l'hébergement semble arrêté depuis quelques temps.)">
-					<img src="img/wiki-peps.png" alt="Aperçu de : ''Wiki PEPS''. (Récupéré via web.archive.org, l'hébergement semble arrêté depuis quelques temps.)" class="embed"/>
-				</a>
-				<article class="caption">
-					<p>Développement d'un Wiki sur les dispositifs PEPS pour le département SAD à l'INRA.</p>
-					<a href="http://www.wiki-peps.fr/mediawiki/index.php/Accueil">Consulter le wiki</a>
-				</article>
-			</div>
-		</div>
-		<div class="hexagon"><div class="innerHex"></div></div>
-		<div class="hexagon">
-			<div class="innerHex">
-				<article>
-					<h1>Curriculum Vitae</h1>
-					<p>Télécharger mon CV
-					<br/>
-					&#8681;
-					<br/>
-					<button class="btn btn-warning btn-lg" onclick="location.href='Valentin_Veillault_CV.pdf'" >Veillault_Valentin_CV.pdf</button>
-					</p>
-				</article>
-			</div>
-		</div>
-		<div class="hexagon"><div class="innerHex"></div></div>
-		<div class="hexagon">
-			<div class="innerHex">
-			<article>
-				<h1>Me contacter</h1>
-				<p>Vous pouvez me contacter en envoyant un email à l'adresse suivante :
-				<br/>
-				<strong>valentin.v03@orange.fr</strong>
-				</p>
-			</article>
-			</div>
-		</div>
-	</main>
-	<!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<!-- fancybox -->
-	<script src="js/jquery.fancybox.min.js"></script>
-  </body>
- </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Valentin Veillault - Portfolio</title>
+    <link rel="icon" type="image/svg" href="img/perroquet.svg" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link href="css/animatedtilegrid.css" rel="stylesheet" />
+    <link href="css/cards.css" rel="stylesheet" />
+    <link href="css/expandables.css" rel="stylesheet" />
+    <link href="css/slideshows.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header>
+        <span>Portfolio - Valentin Veillault</span>
+    </header>
+    <main class="dashboard display-animation">
+        <div class="tile">
+            <section class="card" style="width: 450px; background-color: #D9E4EC;">
+                <div class="photo"></div>
+                <h3>ABOUT ME</h3>
+                <div class="accordion">
+                    <div class="option">
+                        <input type="checkbox" id="aboutMe" class="toggle" checked/>
+                            <label class="title" for="aboutMe">Who am I?</label>
+                        <div class="content">
+                            <p>I am a young graduate looking for a job in IT. I became interested in computer science
+                                and made it the subject of my studies because I am passionate about the creative
+                                potential that IT can bring. For me, mastering IT means mastering a tool that allows me
+                                to be able to create solutions or simply be creative in its pure sense. On the other
+                                hand, because the video game industry pushes these aspects to the maximum, I
+                                particularly care about it. For me, designing something and in a way bringing it to life
+                                then sharing it and making this creation useful for people is really a fundamental and
+                                motivating objective.</p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="whyAbroad" class="toggle" />
+                        <label class="title" for="whyAbroad">
+                            Why do I want to move out abroad?
+                        </label>
+                        <div class="content">
+                            <p>Why do I want to move and live abroad? It may be an interesting question. In fact, there
+                                are several reasons why I am so interested in doing this. The main thing is clearly that
+                                I think it is a very rewarding experience to have if you feel like doing it. I am
+                                convinced that it will bring me a lot in terms of cultural knowledge, openness and
+                                understanding of the people I would meet. First, I was not targeting a particular
+                                country, I was just thinking of any English speaking western country. Today, I know that
+                                I want to live this adventure and start it as soon as possible.</p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="whyGermany" class="toggle" />
+                        <label class="title" for="whyGermany">
+                            Why Germany?
+                        </label>
+                        <div class="content">
+                            <p>By meeting people and making friends through the internet from many places in the world,
+                                I have gathered a lot of pros and cons for moving to different countries. And that's how
+                                I came to the conclusion that: the most interesting place for me would be Germany.
+                                Germany being in Europe, it is also a good point for me, I will not be far from my
+                                French family if I have to visit them a few times. Also, by the time I drew this
+                                conclusion, I was not able to speak a word in German so I decided to immediately start
+                                learning it daily as I am convinced that it is my best choice. Although, some German
+                                friends have told me that I could do it by speaking only English, although it is
+                                probably correct, I have to learn German for me. I want to understand people better and
+                                because I am very aware of what this brings in terms of culture and understanding in
+                                general, I cannot ignore it.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="tile">
+            <section class="card" style="width: 700px;">
+                <div class="photo"></div>
+                <h3 style="margin-bottom: 0;">SOME DRAWINGS</h3>
+                <p class="persistantSubText">A hobby</p>
+                <div class="slideshow" data-loop="true">
+                    <div class="slider">
+                        <div style="background:#5b8;">
+                            <img src="img/stickers.png" alt="illustration : fennec stickers" style="height: 85%;" />
+                        </div>
+                        <div style="background:#85b;">
+                            <img src="img/perroquet.svg" alt="illustration : parrot" />
+                        </div>
+                        <div style="background:#e95;">
+                            <img src="img/demo_showcase.png" alt="illustration : game demo" />
+                        </div>
+                        <div style="background:#e59;">
+                            <img src="img/anthro fennec sketch.png" alt="sketch : anthropomorphic fennec fox" />
+                        </div>
+                    </div>
+                    <div class="prevNext"></div>
+                    <ul class="bullets"></ul>
+                </div>
+            </section>
+        </div>
+        <div class="tile">
+            <section class="card" style="width: 450px; background-color: #385E72;">
+                <div class="photo"></div>
+                <h2>CONTACT</h2>
+                <p>
+                    You can contact me anytime at
+                    <a href="mailto:valentin.veillault@gmail.com">valentin.veillault@gmail.com</a>
+                </p>
+                <h2>Download my resume</h2>
+                <br />
+                <div style="transform: translateZ(2px);">
+                    <a href="Lebenslauf_Valentin_Veillault.pdf" target="_blank"
+                        class="button">Lebenslauf_Valentin_Veillault.pdf</a>
+                </div>
+            </section>
+        </div>
+        <div class="tile">
+            <section class="card" style="width: 550px; height: 675px;">
+                <div class="photo"
+                    style="background: url('img/demo_showcase.png') no-repeat center center; background-size: cover;">
+                </div>
+                <h2>A LITTLE GAME PROJECT</h2>
+                <p>
+                    Written in TypeScript
+                    <br />
+                    <a href="demo_game_proj_js_perf_test/index.html">View the online demo</a>
+                </p>
+                <div class="chart">
+                    <div class="bar" data-background="#E54D27" data-color="black" data-label="HTML"><span>0.20%</span>
+                    </div>
+                    <div class="bar" data-background="#3899D6" data-color="black" data-label="CSS"><span>2.35%</span>
+                    </div>
+                    <div class="bar" data-background="#007ACD" data-color="black" data-label="TS"><span>17.52%</span>
+                    </div>
+                    <div class="bar" data-background="#F0DA4E" data-color="black" data-label="JS"><span>16.27%</span>
+                    </div>
+                    <div class="bar" data-background="#FFFF69" data-color="black" data-label="SVG"><span>41.77%</span>
+                    </div>
+                    <div class="bar" data-background="#ffffff" data-color="black" data-label="?"><span>22.22%</span>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="option">
+                        <input type="checkbox" id="motivations" class="toggle" checked />
+                            <label class="title" for="motivations">The motivations
+                        </label>
+                        <div class="content">
+                            <p>I started this small project primarily to measure my advanced knowledge and coding skills
+                                from scratch of some sort of game engine. I wanted to do something simple and
+                                achievable. I used TypeScript because I like the endless possibilities by mixing
+                                paradygms in JavaScript and TypeScript was a good solution to get a better view of the
+                                project from a technical side. (TypeScript is a language which is compiled in Javascript
+                                but brings a lot more tools to make sure everything behaves well technically.) It also
+                                gave me the possibility to share the project on a web page which is very nice to present
+                                a small demo. And so, I developed this little game demo from scratch. All the animations
+                                are defined with some internal properties that I have defined mainly with an Object
+                                Oriented paradygm, the level is defined by a JSON file containing an array with each of
+                                the blocks with their nature and their displayed image. The mechanisms of gravity and
+                                collision were also created from scratch. Each entity is actually an HTML node wrapped
+                                in more complex and appropriate objects and controlled by the game.</p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="limits" class="toggle" />
+                        <label class="title" for="limits">
+                            The limits
+                        </label>
+                        <div class="content">
+                            <p>I knew from the start that using TypeScript / JavaScript was not an easy solution to
+                                build a stable game and so it would require a lot of optimizations. Although on this
+                                part I think I did a great job of making it effective but at the same time if I were to
+                                make it a full game it would start to get complicated with this kind of technology
+                                anyways. It was fun, and I quite like the result though. I also thought about editing
+                                the SVG image files directly in the game to add a little customization to the character.
+                                Unfortunately, while SVG is quite handy for this because it is as easy to dynamically
+                                edit as the HTML I was using, some web browser security principles do not allow these
+                                kinds of edits. On the other hand, with a custom browser like an app, I could work
+                                around this problem in order to make it work. And obviously, it's far from a serious
+                                project with a tailor-made desktop application capable of communicating with video
+                                drivers directly etc.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="tile">
+            <section class="card" style="width: 625px; height: 675px;">
+                <div class="photo">
+                </div>
+                <h2>A WIKI</h2>
+                <p>
+                    Made for an internship
+                </p>
+                <div class="chart">
+                    <div class="bar" data-background="#E54D27" data-color="black" data-label="XML"><span>30%</span>
+                    </div>
+                    <div class="bar" data-background="#3899D6" data-color="black" data-label="CSS"><span>5%</span>
+                    </div>
+                    <div class="bar" data-background="#007ACD" data-color="black" data-label="PHP"><span>20%</span>
+                    </div>
+                    <div class="bar" data-background="#F0DA4E" data-color="black" data-label="JS"><span>5%</span>
+                    </div>
+                    <div class="bar" data-background="#ffffff" data-color="black" data-label="?"><span>40%</span>
+                    </div>
+                </div>
+                <div class="slideshow" data-loop="false">
+                    <div class="slider">
+                        <div style="background:#5b8;">
+                            <img src="img/wiki-peps.png" alt="screenshot : wiki-peps" style="height: 94%;" />
+                        </div>
+                        <div style="background:#85b;">
+                            <div class="accordion">
+                                <div class="option">
+                                    <input type="checkbox" id="wikiMission" class="toggle" checked />
+                                    <label class="title" for="wikiMission">
+                                        The mission
+                                    </label>
+                                    <div class="content">
+                                        <p>I was asked to build a wiki in order to share knowledge between researchers
+                                            at the INRAE ​​research institute and with all stakeholders. I had to adapt
+                                            the wiki to the graphic charter of the research institute, and of the team
+                                            commissioning the wiki. I had to take care of MediaWiki and all the server
+                                            setup involved, including the REST subservers I needed to define in order to
+                                            make the content dynamic and connect the visual editor UI. And so I built a
+                                            wiki called Wiki-PEPS. This my first big project in terms of development and
+                                            for a real customer and it was a big one. Especially when dealing with REST
+                                            services like REST-Base and the whole ecosystem that I had to put in place
+                                            to make it work. It was a great experience with deep configurations on Linux
+                                            servers and these new tools making all the REST directives available. I
+                                            learned on my own how to handle it with limited documentation and only
+                                            available in English for the most part.</p>
+                                    </div>
+                                </div>
+                                <div class="option">
+                                    <input type="checkbox" id="wikiNow" class="toggle" />
+                                    <label class="title" for="wikiNow">
+                                        Now
+                                    </label>
+                                    <div class="content">
+                                        <p>Nowadays, the wiki is no longer hosted on a public host. The screenshot here
+                                            depicts a slightly broken version of the wiki that was retrieved through the
+                                            Internet archive.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prevNext"></div>
+                    <ul class="bullets"></ul>
+                </div>
+            </section>
+        </div>
+        <div class="tile">
+            <section class="card" style="width: 660px; height: 675px;">
+                <div class="photo">
+                </div>
+                <h2>AN EDITOR APP</h2>
+                <p>
+                    Made for an internship
+                </p>
+                <div class="chart">
+                    <div class="bar" data-background="#E54D27" data-color="black" data-label="HTML"><span>1.48%</span>
+                    </div>
+                    <div class="bar" data-background="#3899D6" data-color="black" data-label="CSS"><span>8.77%</span>
+                    </div>
+                    <div class="bar" data-background="#F0DA4E" data-color="black" data-label="JS"><span>89.75%</span>
+                    </div>
+                </div>
+                <div class="slideshow" data-loop="false">
+                    <div class="slider">
+                        <div style="background:#5b8;">
+                            <img src="img/elec-sheets.png" alt="screenshot : electron editor" style="height: 94%;" />
+                        </div>
+                        <div style="background:#85b;">
+                            <div class="accordion">
+                                <div class="option">
+                                    <input type="checkbox" id="electronMission" class="toggle" checked />
+                                    <label class="title" for="electronMission">
+                                        The mission
+                                    </label>
+                                    <div class="content">
+                                        <p>One of the great tools in an app I developed for a company I interned in was
+                                            a PowerPoint-like visual editor. Its function is to allow the user to easily
+                                            create very personalized internal documents that were partially computed
+                                            before. This is something that was developed in an Electron application. I
+                                            had to use precise and foolproof JavaScript to make it impossible to break
+                                            through the UI. It was a nice design task, I had to make it user-friendly
+                                            and connect it to the rest of the app. And I managed to make this editor
+                                            from scratch, based on drag and drop interactions, a fully working editor
+                                            fulfilling its purpose.</p>
+                                    </div>
+                                </div>
+                                <div class="option">
+                                    <input type="checkbox" id="electronNow" class="toggle" />
+                                    <label class="title" for="electronNow">
+                                        Now
+                                    </label>
+                                    <div class="content">
+                                        <p>This app is now part of a larger app used internally at the company I worked
+                                            for. They were really happy with the whole project, the main app should have
+                                            a bright future.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="prevNext"></div>
+                    <ul class="bullets"></ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>Made by Valentin Veillault - 23.11.2021</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

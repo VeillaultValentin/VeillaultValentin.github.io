@@ -1,0 +1,130 @@
+/* slideshow */
+
+.slideshow {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+
+    user-select: none;
+
+    transform: translateZ(20px);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+    cursor: default;
+}
+
+.slideshow .slider {
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.8s;
+}
+
+.slideshow .slider img {
+    height: 100%;
+}
+
+/* slides */
+
+.slideshow .slider>* {
+    font-size: 1rem;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
+    background: none 50% no-repeat;
+    background-size: cover;
+
+    text-align: center;
+}
+
+/* slideshow controls */
+
+.slideshow .prevNext {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 100%;
+    height: 0;
+}
+
+.slideshow .prevNext>div+div {
+    visibility: hidden;
+}
+
+.slideshow .prevNext a {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.slideshow .prevNext a+a {
+    left: auto;
+    right: 0;
+}
+
+.slideshow .bullets {
+    position: absolute;
+    z-index: 2;
+    bottom: -0.5em;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+}
+
+.slideshow .bullets li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.slideshow .bullets li a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    font-size: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    outline: none;
+    box-sizing: border-box;
+    transition: .2s ease-in-out;
+
+    border: 2px solid #fff;
+    transform: rotate(45deg);
+}
+
+.slideshow .bullets li a:hover {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.slideshow .bullets li a.active {
+    background-color: #fff;
+}
+
+.slideshow .prevNext div a {
+    width: 0;
+    height: 0;
+    border-top: 10px solid rgba(255, 255, 255, .5);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.slideshow .prevNext div a:hover {
+    border-top-color: #fff;
+}
+
+.slideshow .prevNext div a:first-child {
+    transform: rotate(90deg);
+}
+
+.slideshow .prevNext div a:last-child {
+    transform: rotate(270deg);
+}

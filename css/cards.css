@@ -1,0 +1,294 @@
+.card {
+    background-color: cyan;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    perspective: 1500;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    box-shadow: 5px 5px 24px 0px rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+}
+
+@media (min-height: 600px) {
+    .card {
+        width: 400px;
+        height: 550px;
+    }
+}
+
+.card h2,
+.card h3,
+.card p {
+    transform: translateZ(2px);
+    color: white;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0;
+    font-weight: 300;
+    padding: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+    text-align: center;
+}
+
+@media (min-height: 600px) {
+
+    .card h2,
+    .card h3,
+    .card p {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+.card h2 {
+    margin: 20px 0 0 0;
+}
+
+.card h3 {
+    margin: 10px 0 40px 0;
+}
+
+@media (min-height: 600px) {
+    .card h3 {
+        margin: 20px 0 40px 0;
+    }
+}
+
+.card p {
+    margin: 0px 0 30px 0;
+    font-size: 16px;
+}
+
+@media (min-height: 600px) {
+    .card p {
+        margin: 0px 0 40px 0;
+        font-size: 21px;
+    }
+}
+
+.card .chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transform: translateZ(2px);
+    transition: transform 0.5s ease-in-out;
+
+    margin: 0.5em;
+}
+
+.card .photo {
+    position: absolute;
+    transform: translateZ(1px);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+
+    cursor: zoom-in;
+}
+
+.card .photo:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.card .bar {
+    will-change: height;
+    width: 25px;
+    height: 1px;
+    background-color: white;
+    transform: translateX(-7.5px) rotateX(-90deg) rotateY(-45deg);
+    transform-origin: 100% 100%;
+    transition: height 0.5s ease-in-out, margin 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+    margin: 6px;
+    position: relative;
+}
+
+@media (min-height: 600px) {
+    .card .bar {
+        margin: 10px;
+        width: 35px;
+        transform: translateX(-12.5px) rotateX(-90deg) rotateY(-45deg);
+    }
+}
+
+.card .bar:after {
+    display: block;
+    content: "";
+    height: 100%;
+    width: 25px;
+    position: absolute;
+    top: 0;
+    right: -25px;
+    background-color: grey;
+    transform: rotateY(90deg);
+    transform-origin: 0% 50%;
+}
+
+@media (min-height: 600px) {
+    .card .bar:after {
+        width: 35px;
+        right: -35px;
+    }
+}
+
+.card .bar:before {
+    font-family: "Oxygen", sans-serif;
+    display: block;
+    content: "";
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    background-color: white;
+    transform: rotateX(90deg);
+    transform-origin: 0% 100%;
+    color: white;
+    text-align: center;
+    font-size: 8px;
+    line-height: 25px;
+    padding: 0;
+    transition: color 0.3s ease-in-out;
+}
+
+@media (min-height: 600px) {
+    .card .bar:before {
+        width: 35px;
+        height: 35px;
+        top: -35px;
+        font-size: 12px;
+        line-height: 35px;
+    }
+}
+
+.card .bar span {
+    font-family: "Oxygen", sans-serif;
+    position: absolute;
+    transform: rotateZ(-90deg);
+    border-radius: 2px;
+    transform-origin: 0% 100%;
+    top: 35px;
+    white-space: nowrap;
+    text-align: right;
+    left: 23px;
+    padding: 5px;
+    color: black;
+    font-size: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@media (min-height: 600px) {
+    .card .bar span {
+        left: 30px;
+        font-size: 13px;
+    }
+}
+
+.details.card {
+    transform: rotateX(60deg) translateY(150px);
+    box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.75);
+
+    overflow: visible !important;
+}
+
+.details.card .chart {
+    transform: translateZ(40px) translatey(50px);
+}
+
+.details.card .bar {
+    transform: translateX(-7.5px) rotateX(-90deg) rotateY(-25deg);
+    transition-delay: 0.3s;
+}
+
+@media (min-height: 600px) {
+    .details.card .bar {
+        transform: translateX(-12.5px) rotateX(-90deg) rotateY(-25deg);
+    }
+}
+
+.details.card .bar span {
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+.details.card .photo {
+    transform: translateZ(20px);
+}
+
+.details.card .photo:after {
+    background-color: rgba(0, 50, 100, 0.8);
+
+    cursor: zoom-out;
+}
+
+.details.card h2 {
+    opacity: 0;
+    transform: translateZ(40px) translateY(-100px);
+}
+
+.details.card>p {
+    opacity: 0;
+    transform: translateZ(40px) translateY(-80px);
+}
+
+.details.card h3 {
+    transform: translateZ(60px) translateY(100px);
+}
+
+
+/* custom */
+.card .bar:before {
+    content: var(--label);
+    font-weight: bold;
+    background-color: var(--background);
+    color: var(--color);
+}
+
+.details.card .bar {
+    background-color: var(--background);
+    box-shadow: 0 -30px 40px -20px rgba(0, 0, 0, 0.75) inset;
+    color: var(--color);
+    height: var(--height);
+    margin-top: var(--marginTop);
+}
+
+.details.card .bar::after {
+    background-color: var(--background);
+    box-shadow: 0 -30px 40px -20px rgba(0, 0, 0, 0.75) inset;
+}
+
+.card .bar span {
+    color: var(--color);
+}
+
+.card.details .persistantSubText {
+    transform : translateZ(80px) translateY(130px);
+    opacity : 1;
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 400px !important;
+    }
+}

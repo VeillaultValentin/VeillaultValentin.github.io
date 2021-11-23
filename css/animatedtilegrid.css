@@ -1,0 +1,30 @@
+/* tile grid */
+
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tile {
+    margin: 1em;
+}
+
+.display-animation>* {
+    transform: scale(0);
+}
+
+.display-animation>.animated {
+    animation: display 0.5s cubic-bezier(0.55, 0, 0.1, 1) forwards;
+}
+
+@keyframes display {
+    from {
+        -webkit-transform: scale(0);
+    }
+
+    to {
+        -webkit-transform: scale(1);
+    }
+}
