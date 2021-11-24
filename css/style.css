@@ -83,14 +83,15 @@ a {
 .resumes div {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 0.25em;
     width: 80%;
 }
 
 .resumes img {
     height: 2em;
-    border-radius: 5px;
-    margin-bottom: 0.25em;
+    border-radius: 25%;
+    margin-bottom: 0.5em;
 }
 
 .paper3D {
@@ -127,6 +128,10 @@ a {
 #photo img {
     width: 100%;
     height: 100%;
+}
+
+#photo::after {
+    border: thin solid #5b8;
 }
 
 #photo::after,
