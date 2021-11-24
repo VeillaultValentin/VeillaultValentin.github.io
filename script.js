@@ -1,5 +1,4 @@
 function toggleTilt(card) {
-    //card.querySelectorAll(".toggle").forEach((e) => e.checked = false)
     if (!card.classList.contains("details"))
         card.classList.add("details");
     else
@@ -30,7 +29,7 @@ window.onload = () => {
         let size = (Number(e.firstChild.textContent.slice(0, e.firstChild.textContent.length - 1)) ? Number(e.firstChild.textContent.slice(0, e.firstChild.textContent.length - 1)) : 0)
 
         e.style.setProperty("--height", 5 * size + "px")
-        e.style.setProperty("--marginTop",-5 * size + "px")
+        e.style.setProperty("--marginTop", -5 * size + "px")
         e.style.setProperty("--background", background)
         e.style.setProperty("--color", color)
         e.style.setProperty("--label", label)
@@ -77,14 +76,14 @@ window.onload = () => {
             window.clearInterval(loop)
             if (slideshow.getAttribute("data-loop") == "true") loop = getLoop()
 
-            slideshow.querySelector(".slider").style.transform = "translateX("+ -100 * (slide -1) +"%)"
+            slideshow.querySelector(".slider").style.transform = "translateX(" + -100 * (slide - 1) + "%)"
             bullets.forEach((b) => b.classList.remove("active"))
             bullets.forEach((b) => {
                 if (b.getAttribute("href").slice(2) == slide) b.classList.add("active")
             })
-        
+
             prevNext.forEach((pn) => pn.style.visibility = "hidden")
-            slideshow.querySelector(".prevNext>*:nth-child("+ slide +")").style.visibility = "visible"
+            slideshow.querySelector(".prevNext>*:nth-child(" + slide + ")").style.visibility = "visible"
         }
 
         /* automated loop */

@@ -283,8 +283,8 @@
 }
 
 .card.details .persistantSubText {
-    transform : translateZ(80px) translateY(130px);
-    opacity : 1;
+    transform: translateZ(80px) translateY(130px);
+    opacity: 1;
 }
 
 @media screen and (max-width: 480px) {
