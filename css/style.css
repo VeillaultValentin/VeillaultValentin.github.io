@@ -122,6 +122,12 @@ a {
     background-size: cover;
 }
 
+#middleResume {
+    transform: rotateX(-90deg) rotateY(-5deg) translateY(-150px) translateZ(0px) translateX(-15px);
+    background: url('../img/Lebenslauf_valentin_veillault_1.png') no-repeat top left;
+    background-size: cover;
+}
+
 #photo {
     transform: rotateX(-90deg) rotateY(0deg) translateY(-250px) translateZ(0px) translateX(0px);
     height: 400px;
