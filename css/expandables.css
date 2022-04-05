@@ -7,8 +7,8 @@
     height: 100%;
     overflow-y: auto;
     cursor: default;
+    min-width: 100%;
 
-    /* Works on Firefox */
     scrollbar-width: thin;
     scrollbar-color: rgba(255, 255, 255, 0.75) transparent;
 }
@@ -84,6 +84,24 @@
 
     text-indent: 2em;
     text-align: left;
+}
+
+.content ul {
+    list-style: none;
+    line-height: 1.75em;
+}
+
+.content ul li:before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    left: -10px;
+    top: -2px;
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    border: 1px solid;
+    transform: rotate(45deg);
 }
 
 .toggle:checked+.title+.content {

@@ -19,6 +19,22 @@
     <header>
         <span>Portfolio - Valentin Veillault</span>
     </header>
+    <div id="modalBackdrop">
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span>Notice</span>
+            <button type="button">×</button>
+          </div>
+          <div class="modal-body">
+            <p>Every tile on this website is interactible! You'd probably like to check them out by clicking on their head and push them down!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button">Got it!</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <main class="dashboard display-animation">
         <div class="tile">
             <section class="card" style="width: 450px; background-color: #D9E4EC;">
@@ -138,7 +154,7 @@
         </section>
         </div>
         <div class="tile">
-            <section class="card" style="width: 550px; height: 675px;">
+            <section class="card" style="width: 550px; height: 675px; background-color: #5b8;">
                 <div class="photo"
                     style="background: url('img/demo_showcase.png') no-repeat center center; background-size: cover;">
                 </div>
@@ -166,7 +182,7 @@
                 <div class="accordion">
                     <div class="option">
                         <input type="checkbox" id="motivations" class="toggle" checked />
-                            <label class="title" for="motivations">The motivations
+                        <label class="title" for="motivations">The motivations
                         </label>
                         <div class="content">
                             <p>I started this small project primarily to measure my advanced knowledge and coding skills
@@ -210,7 +226,95 @@
             </section>
         </div>
         <div class="tile">
-            <section class="card" style="width: 625px; height: 675px;">
+            <section class="card" style="width: 625px; height: 675px; background-color: #e95;">
+                <div class="photo"
+                    style="background: url('img/lio_render.png') no-repeat center center; background-size: cover;">
+                </div>
+                <h2>A modeling aventure</h2>
+                <p>
+                    Made with Blender
+                </p>
+                <div class="accordion">
+                    <div class="option">
+                        <input type="checkbox" id="introduction" class="toggle" />
+                        <label class="title" for="introduction">
+                            Introduction
+                        </label>
+                        <div class="content">
+                            <p>
+                                Something I really wanted to take a look at for a while was 3D modeling. In fact, wasn't
+                                a stranger to Blender and 3D modeling before. During my studies at three occasions I had
+                                courses that gotten me really interested about 3D. The first during my DUT degree was a
+                                very short introduction to 3DS Max: a premium 3D software well known in the field. Then
+                                during my next years at the University in two occasions I got a course about 3D
+                                technologies, algorithms and all what's behind software such as Blender & 3DS Max as
+                                well as how GPUs are rendering images and 3D. All this was mostly on the technical side
+                                however, it built a very useful background knowledge for me.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="theProject" class="toggle" />
+                        <label class="title" for="theProject">
+                            The project
+                        </label>
+                        <div class="content">
+                            <p>
+                                After watching some videos with people modeling characters in Blender. I got a good idea
+                                of what workflow I would have to use. I decided to start this project and use a lot of
+                                my passion for character design with me and this whole topic of "bringing my creations
+                                to life"! I took it slowly. Then, because of my background knowledge I chose to approach
+                                modeling by focusing on topology rather than sculpting it with an approach emulating
+                                clay sculpting. This way I had a direct control over the polygons of my meshes and could
+                                take care of making it coherent and usable later for the animation part of the project.
+                                At the same time I have really been aiming to make the model usable in game engines,
+                                especially in Unity. For that, I took care of respecting constraints from the mesh
+                                polygon complexity to the animation rig and skeleton. After around three weeks of work
+                                on that project, I managed to get the result you have been looking at. My model is fully
+                                rigged have even been ported to Unity. It is successfully integrated in Virtual Reality
+                                games as an avatar for games such as VRChat and as a <abbr
+                                    title="Virtual Reality Model">VRM</abbr> that can be used in virtual webcam
+                                applications and animate the model over your facial movements and expressions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="conclusion" class="toggle" />
+                        <label class="title" for="conclusion">
+                            Conclusion
+                        </label>
+                        <div class="content">
+                            <p>
+                                I really loved working on this project. From the beginning to the end. I learned a lot
+                                and it has been satisfying at every steps, creating a new character, giving him the
+                                ability to move, putting him into a game... I really enjoyed how many pieces of
+                                knowledge I had to put together for this project. I am really looking forward to do some
+                                other modeling projects in the future. With the model fully implemented in Unity that
+                                also makes me able to eventually is it as an asset for 3D game projects.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="modelStats" class="toggle" checked />
+                        <label class="title" for="modelStats">
+                            Model stats
+                        </label>
+                        <div class="content">
+                            <ul>
+                                <li>69.555 triangles</li>
+                                <li>35 <abbr title="Key positions on the mesh vertices defining transforms">shape
+                                        keys</abbr>: 15 are describing the main syllables</li>
+                                <li>A weighted rig with 75 bones</li>
+                                <li>A twin set of leg bones faking a humanoid rig setup with a digitigrade model</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="Figure3D" id="3DViewer"></div>
+            </section>
+        </div>
+        <div class="tile">
+            <section class="card" style="width: 625px; height: 675px; background-color: #85b;">
                 <div class="photo">
                 </div>
                 <h2>A WIKI</h2>
@@ -231,7 +335,7 @@
                 </div>
                 <div class="slideshow" data-loop="false">
                     <div class="slider">
-                        <div style="background:#5b8;">
+                        <div style="background:#85b;">
                             <img src="img/wiki-peps.png" alt="screenshot : wiki-peps" style="height: 94%;" />
                         </div>
                         <div style="background:#85b;">
@@ -243,7 +347,7 @@
                                     </label>
                                     <div class="content">
                                         <p>I was asked to build a wiki in order to share knowledge between researchers
-                                            at the <a href="https://www.inrae.fr/en">INRAE</a> ​​research institute and
+                                            at the <a href="https://www.inrae.fr/en">INRAE</a> research institute and
                                             with all stakeholders. I had to adapt the wiki to the graphic charter of the
                                             research institute, and of the team commissioning the wiki. I had to take
                                             care of MediaWiki and all the server setup involved, including the <a
@@ -280,7 +384,7 @@
             </section>
         </div>
         <div class="tile">
-            <section class="card" style="width: 660px; height: 675px;">
+            <section class="card" style="width: 660px; height: 675px; background-color: #e59;">
                 <div class="photo">
                 </div>
                 <h2>AN EDITOR APP</h2>
@@ -297,10 +401,10 @@
                 </div>
                 <div class="slideshow" data-loop="false">
                     <div class="slider">
-                        <div style="background:#5b8;">
+                        <div style="background:#e59;">
                             <img src="img/elec-sheets.png" alt="screenshot : electron editor" style="height: 94%;" />
                         </div>
-                        <div style="background:#85b;">
+                        <div style="background:#e59;">
                             <div class="accordion">
                                 <div class="option">
                                     <input type="checkbox" id="electronMission" class="toggle" checked />
@@ -340,8 +444,13 @@
             </section>
         </div>
     </main>
-    <footer>Made by Valentin Veillault - 23.11.2021</footer>
-    <script src="script.js"></script>
+    <footer>Last update - 05.04.2022</footer>
+    <script src="threeJS/three.min.js"></script>
+    <script src="threeJS/fflate.min.js"></script>
+    <script src="threeJS/FBXLoader.js"></script>
+    <script src="threeJS/OrbitControls.js"></script>
+    <script src="3DLoader.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

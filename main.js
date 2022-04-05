@@ -5,7 +5,25 @@ function toggleTilt(card) {
         card.classList.remove("details");
 }
 
+const modalBackdrop = document.getElementById("modalBackdrop")
+function toggleModal(modalId) {
+    let modal = document.getElementById(modalId)
+    let hidden = (document.body.style.overflow == "hidden" ? true : false)
+    if (hidden) {
+        document.body.style.overflow = "auto"
+        modalBackdrop.style.display = "none"
+        modal.style.display = "none"
+    } else {
+        document.body.style.overflow = "hidden"
+        modalBackdrop.style.display = "block"
+        modal.style.display = "block"
+    }
+}
+
 window.onload = () => {
+    modalBackdrop.addEventListener("click", () => toggleModal("infoModal"))
+    toggleModal("infoModal")
+
     /* calculating delay for smooth tile spawing */
     let speed = 2000
     let container = document.querySelector(".display-animation")
@@ -117,4 +135,6 @@ window.onload = () => {
             }
         })
     })
+    
+    loader3DViewer(500, 900, "3DViewer", "fbx/Lio_render.fbx")
 }
