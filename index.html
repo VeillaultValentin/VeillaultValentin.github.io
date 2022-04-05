@@ -20,20 +20,21 @@
         <span>Portfolio - Valentin Veillault</span>
     </header>
     <div id="modalBackdrop">
-    <div id="infoModal" class="modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span>Notice</span>
-            <button type="button">×</button>
-          </div>
-          <div class="modal-body">
-            <p>Every tile on this website is interactible! You'd probably like to check them out by clicking on their head and push them down!</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button">Got it!</button>
-          </div>
+        <div id="infoModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span>Notice</span>
+                    <button type="button">×</button>
+                </div>
+                <div class="modal-body">
+                    <p>Every tile on this website is interactible! You'd probably like to check them out by clicking on
+                        their head and push them down!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button">Got it!</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <main class="dashboard display-animation">
         <div class="tile">
@@ -226,7 +227,8 @@
             </section>
         </div>
         <div class="tile">
-            <section class="card" style="width: 625px; height: 675px; background-color: #e95;">
+            <section class="card" style="width: 625px; height: 675px; background-color: #e95;"
+                data-mesh="fbx/Lio_render.fbx" data-mesh-target="3DViewer" data-mesh-width="500" data-mesh-height="900">
                 <div class="photo"
                     style="background: url('img/lio_render.png') no-repeat center center; background-size: cover;">
                 </div>
@@ -310,7 +312,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="Figure3D" id="3DViewer"></div>
+                <div class="Figure3D" id="3DViewer">
+                    <div class="progress">
+                        <div></div>
+                    </div>
+                </div>
             </section>
         </div>
         <div class="tile">

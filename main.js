@@ -1,8 +1,19 @@
+const loadedMeshes = []
 function toggleTilt(card) {
-    if (!card.classList.contains("details"))
-        card.classList.add("details");
-    else
-        card.classList.remove("details");
+    if (!card.classList.contains("details")) {
+        card.classList.add("details")
+        if (card.getAttribute("data-mesh") && card.getAttribute("data-mesh")) {
+            let alreadyLoaded = false
+            for (let e in loadedMeshes) if (loadedMeshes[e] == card.getAttribute("data-mesh")) alreadyLoaded = true
+            if (!alreadyLoaded) {
+                loader3DViewer(card.getAttribute("data-mesh-width"), card.getAttribute("data-mesh-height"), card.getAttribute("data-mesh-target"), card.getAttribute("data-mesh"))
+                loadedMeshes.push(card.getAttribute("data-mesh"))
+            }
+        }
+    }
+    else {
+        card.classList.remove("details")
+    }
 }
 
 const modalBackdrop = document.getElementById("modalBackdrop")
@@ -135,6 +146,4 @@ window.onload = () => {
             }
         })
     })
-    
-    loader3DViewer(500, 900, "3DViewer", "fbx/Lio_render.fbx")
 }

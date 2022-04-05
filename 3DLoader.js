@@ -1,4 +1,9 @@
 loader3DViewer = (width, height, id, file) => {
+    const target = document.getElementById(id)
+    const progressBar = (target.getElementsByClassName("progress")[0] ? target.getElementsByClassName("progress")[0] : false)
+    let progressIndex
+    if (progressBar) progressIndex = target.getElementsByClassName("progress")[0].lastElementChild
+
     /* Scene setup */
     const scene = new THREE.Scene()
 
@@ -34,7 +39,7 @@ loader3DViewer = (width, height, id, file) => {
     renderer.setClearColor(0xffffff, 0)
     renderer.outputEncoding = THREE.sRGBEncoding
 
-    document.getElementById(id).appendChild(renderer.domElement)
+    target.appendChild(renderer.domElement)
 
     const controls = new THREE.OrbitControls(camera, renderer.domElement)
     controls.enableDamping = true
@@ -45,7 +50,6 @@ loader3DViewer = (width, height, id, file) => {
     controls.target.set(0, 0.75, 0)
 
     const material = new THREE.MeshLambertMaterial()
-    //material.map = 
     /* Loader */
     const fbxLoader = new THREE.FBXLoader()
     fbxLoader.load(
@@ -55,7 +59,9 @@ loader3DViewer = (width, height, id, file) => {
             scene.add(object)
         },
         (xhr) => {
-            console.log("3D Viewer loading: " + (xhr.loaded / xhr.total) * 100 + '%')
+            console.log("3D Viewer loading '" + file + "': " + (xhr.loaded / xhr.total) * 100 + '%')
+            progressIndex.style.width = (xhr.loaded / xhr.total) * 100 + "%"
+            if ((xhr.loaded / xhr.total) == 1) progressBar.style.display = "none"
         },
         (error) => {
             console.log("3D Viewer error: ", error)
@@ -75,8 +81,6 @@ loader3DViewer = (width, height, id, file) => {
         requestAnimationFrame(animate)
         controls.update()
         render()
-
-        //console.log(camera.getWorldDirection(controls.target))
     }
 
     function render() {
@@ -84,5 +88,4 @@ loader3DViewer = (width, height, id, file) => {
     }
 
     animate()
-
 }
