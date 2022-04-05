@@ -8,12 +8,11 @@ function toggleTilt(card) {
             if (!alreadyLoaded) {
                 loader3DViewer(card.getAttribute("data-mesh-width"), card.getAttribute("data-mesh-height"), card.getAttribute("data-mesh-target"), card.getAttribute("data-mesh"))
                 loadedMeshes.push(card.getAttribute("data-mesh"))
+                document.getElementById(card.getAttribute("data-mesh-target")).addEventListener("dblclick", () => toggleTilt(card))
             }
         }
     }
-    else {
-        card.classList.remove("details")
-    }
+    else card.classList.remove("details")
 }
 
 const modalBackdrop = document.getElementById("modalBackdrop")
