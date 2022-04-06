@@ -194,6 +194,8 @@ a {
     height: 1em;
     width: 0%;
     border-radius: 10px;
+    color: white;
+    text-align: center;
 }
 
 abbr {

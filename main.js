@@ -29,9 +29,15 @@ function toggleModal(modalId) {
 }
 
 window.onload = () => {
-    modalBackdrop.addEventListener("click", () => toggleModal("infoModal"))
-    window.setTimeout(() => window.addEventListener("scroll", () => toggleModal("infoModal")), 200)
     toggleModal("infoModal")
+
+    modalBackdrop.addEventListener("click", () => toggleModal("infoModal"))
+
+    /* timeouts are here to prevent page to be either not scrolled up after refresh and modal to pop out imediately because of the scrolling */
+    window.setTimeout(() => {
+        document.documentElement.scrollTop = 0
+        window.setTimeout(() => window.addEventListener("scroll", () => toggleModal("infoModal")), 100)
+    }, 200)
 
     /* calculating delay for smooth tile spawing */
     let speed = 2000

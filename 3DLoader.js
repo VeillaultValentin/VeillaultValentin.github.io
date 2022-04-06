@@ -39,6 +39,8 @@ loader3DViewer = (width, height, id, file) => {
     renderer.setClearColor(0xffffff, 0)
     renderer.outputEncoding = THREE.sRGBEncoding
 
+    renderer.domElement.style.display = "none"
+
     target.appendChild(renderer.domElement)
 
     const controls = new THREE.OrbitControls(camera, renderer.domElement)
@@ -59,12 +61,18 @@ loader3DViewer = (width, height, id, file) => {
             scene.add(object)
         },
         (xhr) => {
-            console.log("3D Viewer loading '" + file + "': " + (xhr.loaded / xhr.total) * 100 + '%')
+            //console.log("3D Viewer loading '" + file + "': " + (xhr.loaded / xhr.total) * 100 + '%')
             progressIndex.style.width = (xhr.loaded / xhr.total) * 100 + "%"
-            if ((xhr.loaded / xhr.total) == 1) progressBar.style.display = "none"
+            if ((xhr.loaded / xhr.total) == 1) {
+                progressBar.style.display = "none"
+                renderer.domElement.style.display = "block"
+            }
         },
         (error) => {
-            console.log("3D Viewer error: ", error)
+            console.warn("3D Viewer error for file '" + file + "': ", error)
+            progressIndex.style.width = "100%"
+            progressIndex.innerText = "An error has occured"
+            progressIndex.style.backgroundColor = "rgb(229, 77, 39)"
         }
     )
 
