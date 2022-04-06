@@ -18,13 +18,11 @@ function toggleTilt(card) {
 const modalBackdrop = document.getElementById("modalBackdrop")
 function toggleModal(modalId) {
     let modal = document.getElementById(modalId)
-    let hidden = (document.body.style.overflow == "hidden" ? true : false)
+    let hidden = ((modal.style.display = "block" | modal.style.display == '') ? false : true)
     if (hidden) {
-        document.body.style.overflow = "auto"
         modalBackdrop.style.display = "none"
         modal.style.display = "none"
     } else {
-        document.body.style.overflow = "hidden"
         modalBackdrop.style.display = "block"
         modal.style.display = "block"
     }
@@ -32,6 +30,7 @@ function toggleModal(modalId) {
 
 window.onload = () => {
     modalBackdrop.addEventListener("click", () => toggleModal("infoModal"))
+    window.setTimeout(() => window.addEventListener("scroll", () => toggleModal("infoModal")), 200)
     toggleModal("infoModal")
 
     /* calculating delay for smooth tile spawing */
