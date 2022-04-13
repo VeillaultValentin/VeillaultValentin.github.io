@@ -100,7 +100,7 @@
         <div class="tile">
             <section class="card" style="width: 700px;">
                 <div class="photo"></div>
-                <h3 style="margin-bottom: 0;">SOME DRAWINGS</h3>
+                <h3 style="margin-bottom: 0;">SOME ART</h3>
                 <p class="persistantSubText">A hobby</p>
                 <div class="slideshow slideshow3D" data-loop="true">
                     <div class="slider">
@@ -116,12 +116,20 @@
                         <div style="background:#e59;">
                             <img src="img/anthro_fennec_sketch.png" alt="sketch : anthropomorphic fennec fox" />
                         </div>
-                        <div style="background:#e59;">
+                        <div style="background:#5b8;">
                             <img src="img/anthro_fennec_colored.png"
                                 alt="colored drawing : anthropomorphic fennec fox" />
                         </div>
-                        <div style="background:#e59;">
+                        <div style="background:#85b;">
                             <img src="img/Lio_the_Hunter.png"
+                                alt="colored drawing : anthropomorphic fennec fox in a Monster Hunter inspired armor" />
+                        </div>
+                        <div style="background:#e95;">
+                            <img src="img/lio_render_1.png"
+                                alt="colored drawing : anthropomorphic fennec fox in a Monster Hunter inspired armor" />
+                        </div>
+                        <div style="background:#e59;">
+                            <img src="img/lio_render_2.png"
                                 alt="colored drawing : anthropomorphic fennec fox in a Monster Hunter inspired armor" />
                         </div>
                     </div>
@@ -234,9 +242,9 @@
         </div>
         <div class="tile">
             <section class="card" style="width: 625px; height: 675px; background-color: #e95;"
-                data-mesh="fbx/Lio_render.fbx" data-mesh-target="3DViewer" data-mesh-width="500" data-mesh-height="900">
+                data-mesh="models/Lio_render.fbx" data-mesh-target="3DViewer" data-mesh-width="500" data-mesh-height="900">
                 <div class="photo"
-                    style="background: url('img/lio_render.png') no-repeat center center; background-size: cover;">
+                    style="background: url('img/lio_render_2.png') no-repeat center center; background-size: cover;">
                 </div>
                 <h2>A modeling aventure</h2>
                 <p>
@@ -316,8 +324,8 @@
                         </label>
                         <div class="content">
                             <ul>
-                                <li>69.555 triangles</li>
-                                <li>35 <abbr title="Key positions on the mesh vertices defining transforms">shape
+                                <li>69.613 triangles</li>
+                                <li>39 <abbr title="Key positions on the mesh vertices defining transforms">shape
                                         keys</abbr>: 15 are describing the main syllables</li>
                                 <li>A weighted rig with 75 bones</li>
                                 <li>A twin set of leg bones faking a humanoid rig setup with a digitigrade model</li>
@@ -467,7 +475,9 @@
     <footer>Last update - 06.04.2022</footer>
     <script src="threeJS/three.min.js"></script>
     <script src="threeJS/fflate.min.js"></script>
-    <script src="threeJS/FBXLoader.js"></script>
+    <!-- <script src="threeJS/FBXLoader.js"></script> -->
+    <script src="threeJS/MTLLoader.js"></script>
+    <script src="threeJS/OBJLoader.js"></script>
     <script src="threeJS/OrbitControls.js"></script>
     <script src="3DLoader.js"></script>
     <script src="main.js"></script>
