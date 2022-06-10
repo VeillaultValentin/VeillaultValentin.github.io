@@ -104,6 +104,12 @@
                 <p class="persistantSubText">A hobby</p>
                 <div class="slideshow slideshow3D" data-loop="true">
                     <div class="slider">
+                        <div style="background:#e95;">
+                            <img src="img/Surfing_foatzel_1.png" alt="3D model of a surfing Floatzel from Pokémon" />
+                        </div>
+                        <div style="background:#e59;">
+                            <img src="img/Surfing_foatzel_2.png" alt="3D model of a surfing Floatzel from Pokémon" />
+                        </div>
                         <div style="background:#5b8;">
                             <img src="img/stickers.png" alt="illustration : fennec stickers" style="height: 85%;" />
                         </div>
@@ -125,12 +131,10 @@
                                 alt="colored drawing : anthropomorphic fennec fox in a Monster Hunter inspired armor" />
                         </div>
                         <div style="background:#e95;">
-                            <img src="img/lio_render_1.png"
-                                alt="colored drawing : anthropomorphic fennec fox in a Monster Hunter inspired armor" />
+                            <img src="img/lio_render_1.png" alt="3D model of an anthropomorphic fennec fox" />
                         </div>
                         <div style="background:#e59;">
-                            <img src="img/lio_render_2.png"
-                                alt="colored drawing : anthropomorphic fennec fox in a Monster Hunter inspired armor" />
+                            <img src="img/lio_render_2.png" alt="3D model of an anthropomorphic fennec fox" />
                         </div>
                     </div>
                     <div class="prevNext"></div>
@@ -242,7 +246,8 @@
         </div>
         <div class="tile">
             <section class="card" style="width: 625px; height: 675px; background-color: #e95;"
-                data-mesh="models/Lio_render.fbx" data-mesh-target="3DViewer" data-mesh-width="500" data-mesh-height="900">
+                data-mesh="models/Lio/Lio_render" data-mesh-target="3DViewer" data-mesh-width="500"
+                data-mesh-height="900">
                 <div class="photo"
                     style="background: url('img/lio_render_2.png') no-repeat center center; background-size: cover;">
                 </div>
@@ -334,6 +339,57 @@
                     </div>
                 </div>
                 <div class="Figure3D" id="3DViewer">
+                    <div class="progress">
+                        <div></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="tile">
+            <section class="card" style="width: 625px; height: 675px; background-color: #e95;"
+                data-mesh="models/Floatzel/Surfing_Floatzel" data-mesh-target="3DViewerFloatzel" data-mesh-width="500"
+                data-mesh-height="900">
+                <div class="photo"
+                    style="background: url('img/Surfing_foatzel_1.png') no-repeat center center; background-size: cover;">
+                </div>
+                <h2>An other 3D project</h2>
+                <p>
+                    Made with Blender
+                </p>
+                <div class="accordion">
+                    <div class="option">
+                        <input type="checkbox" id="theProjectFloatzel" class="toggle" checked />
+                        <label class="title" for="theProjectFloatzel">
+                            The project
+                        </label>
+                        <div class="content">
+                            <p>
+                                I absolutely loved working on my latest 3D modeling project and enjoyed the result. This
+                                time I thought I could go even further and do something even more refined. And so I
+                                worked on a new character. In case you didn't already know, this character from the
+                                Pokémon series and is called Floatzel. I decided to experiment with fur generation, you
+                                can see the result on the rendered images. I really like how it turned out. It was as
+                                much an artistic challenge as a technical challenge.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="modelStatsFloatzel" class="toggle" checked />
+                        <label class="title" for="modelStatsFloatzel">
+                            Model stats
+                        </label>
+                        <div class="content">
+                            <ul>
+                                <li>43.883 triangles</li>
+                                <li>19 <abbr title="Key positions on the mesh vertices defining transforms">shape
+                                        keys</abbr>: 15 are describing the main syllables</li>
+                                <li>A weighted rig with 99 bones</li>
+                                <li>9 particle systems to generate fur, each part is manually groomed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="Figure3D" id="3DViewerFloatzel">
                     <div class="progress">
                         <div></div>
                     </div>
@@ -472,7 +528,7 @@
             </section>
         </div>
     </main>
-    <footer>Last update - 06.04.2022</footer>
+    <footer>Last update - 10.06.2022</footer>
     <script src="threeJS/three.min.js"></script>
     <script src="threeJS/fflate.min.js"></script>
     <!-- <script src="threeJS/FBXLoader.js"></script> -->

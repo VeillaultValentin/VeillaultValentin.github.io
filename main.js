@@ -76,7 +76,7 @@ window.onload = () => {
         let loop = null
 
         let k = 0
-        slides.forEach(() => {
+        slides.forEach((slide) => {
             let pn = document.createElement("div")
             let pnPrev = document.createElement("a")
             let pnNext = document.createElement("a")
@@ -96,6 +96,12 @@ window.onload = () => {
             bullets.append(bulletWrap)
 
             if (k == 1) bullet.classList.add("active")
+
+            /* allow to click to access full picture */
+            if (slide.firstElementChild.tagName == "IMG") {
+                slide.firstElementChild.addEventListener("click", function () { window.open(this.src) })
+                slide.firstElementChild.style.cursor = "pointer"
+            }
         })
 
         /* overrides nodes memory to get a proper Array prototype */

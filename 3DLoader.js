@@ -77,7 +77,6 @@ loader3DViewer = (width, height, id, file) => {
 
     const mtlLoader = new THREE.MTLLoader()
     const objLoader = new THREE.OBJLoader()
-    file = file.split(".")[0]
     mtlLoader.load(file + ".mtl", (materials) => {
         materials.preload()
 
