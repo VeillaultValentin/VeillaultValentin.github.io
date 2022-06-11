@@ -77,9 +77,21 @@ window.onload = () => {
 
         let k = 0
         slides.forEach((slide) => {
-            let pn = document.createElement("div")
+            let pn = null
+            /* allow to click to access full picture */
+            if (slide.firstElementChild.tagName == "IMG") {
+                pn = document.createElement("a")
+                pn.href = slide.firstElementChild.src
+                pn.target = "_blank"
+            } else pn = document.createElement("div")
+
             let pnPrev = document.createElement("a")
             let pnNext = document.createElement("a")
+
+            let pnPrevIcon = document.createElement("div")
+            let pnNextIcon = document.createElement("div")
+            pnPrev.append(pnPrevIcon)
+            pnNext.append(pnNextIcon)
 
             k++
             pnNext.href = "#s" + (((k + 1) % (slides.length + 1)) > 0 ? (k + 1) % (slides.length + 1) : 1)
@@ -95,16 +107,13 @@ window.onload = () => {
 
             bullets.append(bulletWrap)
 
-            if (k == 1) bullet.classList.add("active")
-
-            /* allow to click to access full picture */
-            if (slide.firstElementChild.tagName == "IMG") {
-                slide.firstElementChild.addEventListener("click", function () { window.open(this.src) })
-                slide.firstElementChild.style.cursor = "pointer"
-            }
+            if (k == 1) { 
+                bullet.classList.add("active")
+                pn.style.visibility = "visible"
+            } else pn.style.visibility = "hidden"
         })
 
-        /* overrides nodes memory to get a proper Array prototype */
+        /* overrides nodes variable to get a proper Array iterator prototype */
         bullets = slideshow.querySelectorAll(".bullets li a")
         prevNext = slideshow.querySelectorAll(".prevNext>*")
 
