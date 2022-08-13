@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Army dataset explorer</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Army dataset explorer</h1>
+            <label for="file">Upload army dataset: </label>
+            <input id="file" type="file" name="dataset" accept="application/JSON">
+            <div>
+                <button id="previous">◀</button>
+                <input type="number" id="current" value="0" />
+                <button id="next">▶</button>
+            </div>
+        </header>
+        <main id="armyDisplay">
+            <h2>No data</h2>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
