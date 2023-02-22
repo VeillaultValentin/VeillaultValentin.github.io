@@ -72,6 +72,8 @@ a {
     color: black;
     text-decoration: none;
     font-size: 0.8em;
+    width: 14.5em;
+    text-align: center;
 }
 
 .button:hover {
@@ -81,6 +83,7 @@ a {
 .resumes {
     transform: translateZ(20px);
     display: flex;
+    margin-top: 1.5em;
 }
 
 .resumes div {
@@ -94,7 +97,7 @@ a {
 .resumes img {
     height: 2em;
     border-radius: 25%;
-    margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }
 
 .paper3D {
@@ -111,20 +114,20 @@ a {
 }
 
 #leftResume {
-    transform: rotateX(-90deg) rotateY(-5deg) translateY(-150px) translateZ(10px) translateX(-105px);
-    background: url('../img/Resume_valentin_veillault.png') no-repeat top left;
+    transform: rotateX(-90deg) rotateY(-5deg) translateY(-150px) translateZ(-10px) translateX(-107px);
+    background: url('../img/CV_valentin_veillault.png') no-repeat top left;
     background-size: cover;
 }
 
 #rightResume {
-    transform: rotateX(-90deg) rotateY(-5deg) translateY(-150px) translateZ(-10px) translateX(100px);
-    background: url('../img/Lebenslauf_valentin_veillault_1.png') no-repeat top left;
+    transform: rotateX(-90deg) rotateY(-5deg) translateY(-150px) translateZ(-30px) translateX(107px);
+    background: url('../img/Lebenslauf_valentin_veillault.png') no-repeat top left;
     background-size: cover;
 }
 
 #middleResume {
     transform: rotateX(-90deg) rotateY(-5deg) translateY(-150px) translateZ(0px) translateX(-15px);
-    background: url('../img/Lebenslauf_valentin_veillault_1.png') no-repeat top left;
+    background: url('../img/Lebenslauf_valentin_veillault.png') no-repeat top left;
     background-size: cover;
 }
 
