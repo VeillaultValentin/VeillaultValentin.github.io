@@ -1,7 +1,7 @@
 .card {
-    background-color: cyan;
-    width: 250px;
-    height: 300px;
+    width: 600px;
+    height: 675px;
+    background-color: #D9E4EC;
     border-radius: 10px;
     perspective: 1500;
     transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
@@ -13,13 +13,6 @@
     box-shadow: 5px 5px 24px 0px rgba(0, 0, 0, 0.2);
 
     overflow: hidden;
-}
-
-@media (min-height: 600px) {
-    .card {
-        width: 400px;
-        height: 550px;
-    }
 }
 
 .card h2,
